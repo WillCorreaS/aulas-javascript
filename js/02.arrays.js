@@ -3,7 +3,7 @@
 // console.log("Arrays!");
 
 
-//DECLARANDO UM ARRAY
+//DECLARANDO UM ARRAY (Vetor - uma dimenção)
 const alunos = ["Wilian", "Vinícius", "Marly", "Duda", "Gabriel"]
 
 //Exibindo a estrutura do array (somente no console)
@@ -22,4 +22,18 @@ let sobremesa = ["Brigadeiro", "Sorvete", "Paçoca", "Mousse", "Goiabada", "Pav�
 /*- Mostrar uma frase personalizada com o 2° nome, 5° nome e 7° nome do array */
 console.log(`Gosto muido de ${sobremesa[1]} misturado com ${sobremesa[4]} e um pedaço de ${sobremesa[6]}!`);
 
-console.log("Gosto muito de",sobremesa[1],"misturado com", sobremesa[4],"e um pedaço de", sobremesa[6]+"!");
+
+
+// TRABALHANDO COM MATRIZ (Array com mais de uma dimenções)
+ const tecnologias = [
+    ["HTML", "CSS3","Javascript"],
+    ["PSP","Node.js","SQL", "Python", "Firebase"]
+ ];
+
+ console.log(tecnologias[0][1]);
+
+
+
+
+
+
