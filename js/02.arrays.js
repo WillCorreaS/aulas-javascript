@@ -21,3 +21,5 @@ let sobremesa = ["Brigadeiro", "Sorvete", "Paçoca", "Mousse", "Goiabada", "Pav�
 
 /*- Mostrar uma frase personalizada com o 2° nome, 5° nome e 7° nome do array */
 console.log(`Gosto muido de ${sobremesa[1]} misturado com ${sobremesa[4]} e um pedaço de ${sobremesa[6]}!`);
+
+console.log("Gosto muito de",sobremesa[1],"misturado com", sobremesa[4],"e um pedaço de", sobremesa[6]+"!");
