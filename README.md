@@ -42,3 +42,22 @@
 - **Boolean** booleano - valores True/False ou Verdadeiro/Falso;
 
 **Type off nomeDaVariavelOuConstante;** verifica o tipo da variável
+
+
+### Sobre Objetos
+- Para criar uma proteção para um objeto use o seguinte código:
+**Object.freeze(obj);**
+
+**Exemplo**
+const obj = {
+  prop: 42,
+};
+
+Object.freeze(obj);
+
+<!-- tentando alterar o objeto -->
+obj.prop = 33;
+// Throws an error in strict mode
+
+console.log(obj.prop);
+// Expected output: 42
