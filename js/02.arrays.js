@@ -27,10 +27,12 @@ console.log(`Gosto muido de ${sobremesa[1]} misturado com ${sobremesa[4]} e um p
 // TRABALHANDO COM MATRIZ (Array com mais de uma dimenções)
  const tecnologias = [
     ["HTML", "CSS3","Javascript"],
-    ["PSP","Node.js","SQL", "Python", "Firebase"]
+    ["PHP","Node.js","SQL", "Python", "Firebase"]
  ];
 
  console.log(tecnologias[0][1]);
+ console.log(tecnologias[1][0]);
+
 
 
 
