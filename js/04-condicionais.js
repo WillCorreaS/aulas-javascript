@@ -39,8 +39,6 @@ if (idade >= 18){
 
 console.log(`${usuario} tem ${idade} anos e é ${maioridade} de idade.`);
 
-
-
 /* A refatoração é uma forma disciplinada de reestruturar o código quando pequenas mudanças são feitas nele para melhorar o design. 
 Reestruturar, melhorar, simplificar.
 */
