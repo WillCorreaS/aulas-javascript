@@ -27,3 +27,18 @@ const carro = {
 
 console.log(`A ${carro.marca} ${carro.modelo} fabricado em ${carro.ano} com ${carro.qtdPortas} portas e com ${carro.listaOpc[1]}, foi um famoso carro no Brasil.`);
 
+
+// novo OBJETO
+const pessoa = {
+    nome: "Chapolim Colorado",
+    idade: 20,
+    telefones: ["(11)2582-3512", "(11)95247-5555"],
+    medidasFisicas: {
+        altura: 1.66,
+        peso: 75
+    }
+};
+
+console.log(pessoa);
+
+console.log(`O ${pessoa.nome} tem ${pessoa.medidasFisicas.peso}kg e ${pessoa.medidasFisicas.altura}m de altura. Contato: ${pessoa.telefones[1]}`);
