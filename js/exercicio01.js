@@ -16,4 +16,3 @@ if (media >= 7){
 } else {
     console.log("REPROVADO!");
 }
-
