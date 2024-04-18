@@ -63,11 +63,28 @@ if (idade>=60){
 console.log(`${usuario} tem ${idade} anos e é ${texto3} de idade.`);
 
 console.log("-----------------------------------------------------");
-let n1 = 5;
-let n2 = 3;
+// let n1 = 5;
+// let n2 = 0;
 
-for(let i=0; i<10; i++){
-    console.log(`${n1} X ${n2} = ${n1*n2}`);
-}
+// for(let i=0; i<10; i++){
+//     console.log(`${n1} X ${n2} = ${n1*n2}`);
+
+// }
 
 console.log("-----------------------------------------------------");
+
+/* Operador SWITCH/CASE (escolha/caso)-  */
+
+let opcao = 1;
+let mensagem;
+
+switch (opcao) {
+    case 1: mensagem = "Informação"; break;
+    case 2: mensagem = "Reclamação"; break;
+    case 3: mensagem = "Elogios"; break;
+    default:
+        break;
+}
+
+console.log("Opção escolhida "+opcao);
+console.log("Mensagem: "+mensagem);
