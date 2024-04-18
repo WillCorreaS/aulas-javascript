@@ -42,6 +42,8 @@ if (onibus == 2203 || onibus == 2019){
 }
 
 
+
+
 console.log("----------------------------------------");
 /* UTILIZANDO OPERADOR LÓGICO ! (NOT) - resultado depende da afirmação negativa de um requisito*/
 
