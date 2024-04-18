@@ -40,3 +40,17 @@ let onibus = 2203;     //2203 ou 2019
 if (onibus == 2203 || onibus == 2019){
     console.log("Embarque");
 }
+
+
+console.log("----------------------------------------");
+/* UTILIZANDO OPERADOR LÓGICO ! (NOT) - resultado depende da afirmação negativa de um requisito*/
+
+let blackFriday = false;
+
+
+//Se blackFriday não for verdadeira
+if (!blackFriday){
+    console.log("Preços normais.");
+} else{
+    console.log("BlackFriday em vigor, super-descontos.");
+}
