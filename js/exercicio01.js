@@ -7,7 +7,7 @@ let media =(nota1+nota2)/2;
 // console.log(media);
 console.log(`Suas notas são: ${nota1} e ${nota2}.`);
 console.log(`Sua média aritimética é: ${media}.`);
-console.log(`Seu e Status é:`);
+console.log(`Seu Status é:`);
 
 if (media >= 7){
     console.log("APROVADO!");
