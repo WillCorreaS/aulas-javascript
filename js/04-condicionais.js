@@ -61,3 +61,13 @@ if (idade>=60){
     texto3="MENOR"
 }
 console.log(`${usuario} tem ${idade} anos e é ${texto3} de idade.`);
+
+console.log("-----------------------------------------------------");
+let n1 = 5;
+let n2 = 3;
+
+for(let i=0; i<10; i++){
+    console.log(`${n1} X ${n2} = ${n1}*${n2}`);
+}
+
+console.log("-----------------------------------------------------");
