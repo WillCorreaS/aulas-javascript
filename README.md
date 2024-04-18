@@ -61,3 +61,15 @@ obj.prop = 33;
 
 console.log(obj.prop);
 // Expected output: 42
+
+
+#### SOBRE OPERADORES LÓGICOS:
+
+# Operador && (and):
+Todas as condições devem ser verdadeiras para que o resultado seja verdadeiro.
+
+# Operador || (ou):
+Apenas uma condição precisa ser verdadeira para que o resultado seja verdadeiro.
+
+# Operador ! (not):
+Com este operador ocorre a inverção de lógica. Ele verifica se a condição **NÃO É VERDADEIRA** ou **NÃO É FALSO**
