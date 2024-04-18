@@ -75,7 +75,7 @@ console.log("-----------------------------------------------------");
 
 /* Operador SWITCH/CASE (escolha/caso)-  */
 
-let opcao = 1;
+let opcao = Math.random() * 4;
 let mensagem;
 
 switch (opcao) {
