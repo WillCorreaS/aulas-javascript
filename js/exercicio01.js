@@ -1,7 +1,7 @@
 'use strict'
 
-let nota1 = 5;
-let nota2 = 5;
+let nota1 = 1;
+let nota2 = 3;
 let media =(nota1+nota2)/2;
 
 // console.log(media);
@@ -11,7 +11,7 @@ console.log(`Seu Status é:`);
 
 if (media >= 7){
     console.log("APROVADO!");
-} else if (media >= 5 & media < 7){
+} else if (media >= 5){
     console.log("RECUPERAÇÃO!");
 } else {
     console.log("REPROVADO!");
