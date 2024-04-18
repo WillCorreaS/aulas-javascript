@@ -61,3 +61,6 @@ const livro = {
 for(const prop in livro){
     console.log(livro[prop]);
 }
+
+
+console.log("-----------------------------------------------------");
