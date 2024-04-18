@@ -20,3 +20,23 @@ if (mediaFinal >= mediaMinima && faltas <= limiteDeFaltas){
 } else {
     console.log("Reprovada!");
 }
+
+console.log("--------------------------------------");
+
+/* UTILIZANDO OPERADOR LÓGICO || (OU) - resultado verdadeiro se contemplar um/ou os dois requisitos*/
+
+let idade =15;
+
+if (idade >= 18 || idade < 12){
+    console.log("Você é adulto ou criança");
+} else {
+    console.log("você é um adolescente");
+}
+
+console.log("----------------------------------------");
+
+let onibus = 2203;     //2203 ou 2019
+
+if (onibus == 2203 || onibus == 2019){
+    console.log("Embarque");
+}
