@@ -1,6 +1,6 @@
 'use strict'
 
-let nota1 = 7;
+let nota1 = 5;
 let nota2 = 5;
 let media =(nota1+nota2)/2;
 
