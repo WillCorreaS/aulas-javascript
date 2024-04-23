@@ -104,6 +104,22 @@ console.log(dobra(10));
 console.log(dobra(25));
 console.log(dobra(35));
 
+separar();
+//funções como métodos/comportamentos de Objetos
+let pessoa = {
+    nome: "Piccolo",
+    idade: 25,
+    verificaIdade(){
+        if (idade <= 18){
+            return "Maior"
+        } else {
+            return "Menor"
+        }
+    }
+};
+console.log(pessoa.nome);
+console.log(`Ele é ${pessoa.verificaIdade()}`);
+
 
 
 
