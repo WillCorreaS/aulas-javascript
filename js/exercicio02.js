@@ -20,26 +20,35 @@ const clientes = [
 console.log("Utilizando FOR:");
 console.log("- - - - - - - - §§§ - - - - - - - -");
 
-for(let i=0; i<clientes.length; i++){
-    console.log(`► Cliente: ${clientes[i].nome} id: ${clientes[i].id}`);  
+let qtdClientes = clientes.length;
+for(let i=0; i<qtdClientes; i++){
+    console.log(`► Cliente: ${clientes[i].nome} (id: ${clientes[i].id})`);  
 }
 
-console.log(" ");
 
+
+console.log(" ");
 console.log("Utilizando FOR OF:");
 console.log("- - - - - - - - §§§ - - - - - - - -");
 
-for (let cliente of clientes){
-    console.log(`► Cliente: ${cliente.nome} id: ${cliente.id}`);
-}
-console.log(" ");
 
+
+for (let cliente of clientes){
+    //Acessando cada **cliente**(objeto) dentro de um Array **clientes**
+    console.log(`► Cliente: ${cliente.nome} (id: ${cliente.id})`);
+}
+
+
+
+console.log(" ");
 console.log("Utilizando WHILE:");
 console.log("- - - - - - - - §§§ - - - - - - - -");
-let j = 0;
 
-while (j<clientes.length) {
-    console.log(`► Cliente: ${clientes[j].nome} id: ${clientes[j].id}`);
+
+
+let j = 0;
+while (j<qtdClientes) {
+    console.log(`► Cliente: ${clientes[j].nome} (id: ${clientes[j].id})`);
     j++;
 }
 
