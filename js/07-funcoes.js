@@ -76,7 +76,33 @@ console.log(`Preço : ${valorFormatado(precoFinal)}`);
 
 separar();
 
+/*A Sintaxe "ARROW FUNCTION" é uma sintaxe moderna para FUNÇÕES no Javascript, muito utilizada em bibliotecas/frameworks como React, React Native, Angular, Vue e etc.
 
+A sintaxe GERAL é:
+
+const nome = ( ) => {};
+
+Ela també pode ser simplificada em alguns casos.
+EXEMPLO: */
+
+//Versão 1:
+// function dobra(valor) {
+//     return valor*2;
+// }
+
+//Versão 2 - com Arrow Function
+// const dobra = (valor) => {
+//     return valor*2
+// }
+
+/*Versão 3 - com Arrow Function
+Qando há apenas a passagem de um único ARQUMENTO/PARÂMETRO pode ser usada da seguinte forma*/
+const dobra = valor => valor*2;
+
+//chamada da função
+console.log(dobra(10));
+console.log(dobra(25));
+console.log(dobra(35));
 
 
 
