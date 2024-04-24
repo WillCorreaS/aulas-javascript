@@ -8,24 +8,26 @@ function converterEmReais(valor) {
 }
 console.log(converterEmReais(valorEmDolar));
 
+
 console.log("----------------------------------");
 console.log("Desafio");
 
-function formatarMoeda(valor) {
+
+function formatarMoeda(valor, siglaDaMoeda) {
     const opc = {
         style: "currency",
-        currency: "BRL"
-        
+        currency: siglaDaMoeda
     };
 
     return new Intl.NumberFormat("pt-br", opc).format(valor);
 }
 
 let valorReal = converterEmReais(valorEmDolar);
+let valorEmReal = converterEmReais(valorEmDolar);
 
 
+console.log(formatarMoeda(valorEmDolar, "USD"));
 
+console.log(formatarMoeda(valorEmReal, "BRL"));
 
-// console.log(formatarMoeda(converterEmReais(valorEmDolar)));
-console.log(formatarMoeda(valorReal));
 
