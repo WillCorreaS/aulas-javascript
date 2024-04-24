@@ -45,4 +45,26 @@ console.log(subtitulos);
 //Ele cria um Array com todos os elementos selecionados
 console.log(subtitulos[0]);
 
-const seleciondoVariosElementos = document,querySelectorAll("p, a, p b, #teste, .class, ul, li");
+const seleciondoVariosElementos = document.querySelectorAll("p, a, p b, #teste, .class, ul, li");
+console.log(seleciondoVariosElementos);
+
+
+/*MODIFICANDO O DOM
+podemos alterar o conteúdo, tag, títulos, criar elementos ou remover etc.
+*/
+
+legenda.textContent = "Imagem do modelo de objetos do documento";
+
+const listaDeEditorres = [
+    {nome: "Vidual Studio Code",
+    finalidade: "Desenvolvimento Web em Geral"
+    },
+    {
+     nome: "Android Studio",
+     finalidade: "Desenvolvimento de aplicação mobile"
+    },
+    {
+     nome: "Xcode",
+     finalidade: "Desenvolvimento de aplicações iOs"
+    }
+]
