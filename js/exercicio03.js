@@ -13,21 +13,21 @@ console.log("----------------------------------");
 console.log("Desafio");
 
 
-function formatarMoeda(valor, siglaDaMoeda) {
+function formatarMoeda(valor, siglaDaMoeda, local) {
     const opc = {
         style: "currency",
         currency: siglaDaMoeda
     };
 
-    return new Intl.NumberFormat("pt-br", opc).format(valor);
+    return new Intl.NumberFormat(local, opc).format(valor);
 }
 
 let valorReal = converterEmReais(valorEmDolar);
 let valorEmReal = converterEmReais(valorEmDolar);
 
 
-console.log(formatarMoeda(valorEmDolar, "USD"));
+console.log(formatarMoeda(valorEmDolar, "USD", "En"));
 
-console.log(formatarMoeda(valorEmReal, "BRL"));
+console.log(formatarMoeda(valorEmReal, "BRL", "pt-br"));
 
 
