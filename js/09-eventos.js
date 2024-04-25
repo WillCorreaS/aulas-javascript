@@ -35,6 +35,10 @@ video.play();
 
 
 
+
+
+
+
 //CRIANDO O MODO NOTURNO
 const divContainer = document.querySelector(".container");
 const botao = document.querySelector("#noturno");
@@ -46,6 +50,24 @@ botao.addEventListener("click", function() {
 - caso esteja desativado ele ativa*/
     pagina.classList.toggle("noturno")
     divContainer.classList.toggle("noturno")
+    
+
+
+    //noturnoCSS.setAttribute("transition", "1s")
+    botao.textContent = "Desativar";
+
 })
+
+
+////////////////////////////////////////////////////////////////////
+
+/*Desafio
+1) Aplicar um efeito de troca de cores suaves
+
+2) Fazer botão mudar de texto (iniciar 'Ativar' e quando ativar 'Desativar' conforme estiver acontecendo)
+*/
+
+// const ativadoDesativado = document.querySelector("button");
+// console.log(ativadoDesativado);
 
 
