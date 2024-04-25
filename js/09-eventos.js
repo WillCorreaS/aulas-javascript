@@ -5,11 +5,16 @@ console.log("eventos");
 const evento01 = document.querySelector("#exemplo01")
 const mensagem = document.querySelector("#mensagem");
 const pagina = document.querySelector("body");
+const video = document.querySelector("video")
 
 
 //Criando um evento de áudio referenciando o arquivo
 const efeitoDeAudio = new Audio();
 efeitoDeAudio.src = "wow.wav";
+
+//Criando um evento de imagem referenciando o arquivo
+const imagem = new Image();
+imagem.src = "wow.gif"
 
 
 //Criando MONITOR/OUVINTE de EVENTO
@@ -19,8 +24,15 @@ evento01.addEventListener("click", function(){mensagem.textContent = "Você Clic
 mensagem.classList.add("destaque")
 
 pagina.style.fontFamily = "Georgia";
+pagina.style.backgroundColor = "#a0ff1f";
 
 efeitoDeAudio.play();
+mensagem.insertAdjacentElement("afterend", imagem);
+
+video.removeAttribute("hidden");
+video.play();
+
+
 
 });
 
