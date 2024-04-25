@@ -55,16 +55,41 @@ podemos alterar o conteúdo, tag, títulos, criar elementos ou remover etc.
 
 legenda.textContent = "Imagem do modelo de objetos do documento";
 
+
+
+
 const listaDeEditorres = [
-    {nome: "Vidual Studio Code",
-    finalidade: "Desenvolvimento Web em Geral"
+    {
+        nome: "Vidual Studio Code",
+        finalidade: "Desenvolvimento Web em Geral"
     },
     {
-     nome: "Android Studio",
-     finalidade: "Desenvolvimento de aplicação mobile"
+        nome: "Android Studio",
+        finalidade: "Desenvolvimento de aplicação mobile"
     },
     {
-     nome: "Xcode",
-     finalidade: "Desenvolvimento de aplicações iOs"
+        nome: "Xcode",
+        finalidade: "Desenvolvimento de aplicações iOs"
     }
 ]
+
+const lista = document.querySelector(".lista");
+console.log(lista);
+
+/*Percorrer o array listaDeEditores, criar os itens <li> com o conteúdo do array e adicionálo a lista HTML */
+
+//for ('criar uma variável de acesso (const/let nomeVariável)'  of arrayQueIremosAcessar)
+
+for (const editor of listaDeEditorres) {
+    //console.log(editor.nome);
+
+    //ETAPA 1: criar elemento <li>
+    const item = document.createElement("li")
+
+    //ETAPA 2: adicionar conteúdo ao nvo elemento
+    item.innerHTML = `<b>${editor.nome}</b>: ${editor.finalidade}`;
+
+    //ETAPA 3: adicionar elemento à lista <ol>
+    lista.appendChild(item);
+
+} 
