@@ -92,4 +92,15 @@ for (const editor of listaDeEditorres) {
     //ETAPA 3: adicionar elemento à lista <ol>
     lista.appendChild(item);
 
-} 
+}
+
+
+
+/*Adicionando ATRIBUTOS no HTML - setAttribute*/
+const lisksDeReferencia = document.querySelectorAll(".referencias a");
+//console.log(lisksDeReferencia);
+
+for (const link of lisksDeReferencia){
+    link.setAttribute("target", "_blank");
+    console.log(link);
+}
