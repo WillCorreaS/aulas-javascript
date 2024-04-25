@@ -31,10 +31,21 @@ mensagem.insertAdjacentElement("afterend", imagem);
 
 video.removeAttribute("hidden");
 video.play();
-
-
-
 });
 
+
+
+//CRIANDO O MODO NOTURNO
+const divContainer = document.querySelector(".container");
+const botao = document.querySelector("#noturno");
+
+botao.addEventListener("click", function() {
+
+/*"toggle" é utilizado para alternar o estado da classe:
+- caso esteja ativo ele desativa.
+- caso esteja desativado ele ativa*/
+    pagina.classList.toggle("noturno")
+    divContainer.classList.toggle("noturno")
+})
 
 
