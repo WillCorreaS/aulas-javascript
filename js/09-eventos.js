@@ -43,20 +43,30 @@ video.play();
 const divContainer = document.querySelector(".container");
 const botao = document.querySelector("#noturno");
 
-botao.addEventListener("click", function() {
+console.log(botao);
 
-/*"toggle" é utilizado para alternar o estado da classe:
-- caso esteja ativo ele desativa.
-- caso esteja desativado ele ativa*/
-    pagina.classList.toggle("noturno")
-    divContainer.classList.toggle("noturno")
+
+botao.addEventListener("click", function() {
+    if (!divContainer.classList.contains("noturno")){
+        divContainer.classList.add("noturno");
+        botao.textContent = "Ativar Modo Claro";
+    } else {
+        (divContainer.classList.remove("noturno"))
+        botao.textContent = "Ativar Modo Escuro";
+        botao.style.transition = '2s';
+    }
+
+
+    //pagina.classList.toggle("noturno")
+    //divContainer.classList.toggle("noturno")
     
 
-
     //noturnoCSS.setAttribute("transition", "1s")
-    botao.textContent = "Desativar";
+    //botao.textContent = "Desativar";
 
 })
+
+
 
 
 ////////////////////////////////////////////////////////////////////
@@ -67,7 +77,5 @@ botao.addEventListener("click", function() {
 2) Fazer botão mudar de texto (iniciar 'Ativar' e quando ativar 'Desativar' conforme estiver acontecendo)
 */
 
-// const ativadoDesativado = document.querySelector("button");
-// console.log(ativadoDesativado);
 
 
