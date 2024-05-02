@@ -50,12 +50,13 @@ botao.addEventListener("click", function() {
     if (!divContainer.classList.contains("noturno")){
         divContainer.classList.add("noturno");
         botao.textContent = "Ativar Modo Claro";
+        
     } else {
         (divContainer.classList.remove("noturno"))
         botao.textContent = "Ativar Modo Escuro";
         botao.style.transition = '2s';
     }
-
+    
 
     //pagina.classList.toggle("noturno")
     //divContainer.classList.toggle("noturno")
